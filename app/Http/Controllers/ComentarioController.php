@@ -11,7 +11,7 @@ class ComentarioController extends Controller
 {
     public function store(Request $request, User $user, Post $post)
     {
-        // Validar
+        // Validar .
         $this->validate($request, [
             'comentario' => 'required|max:255'
         ]);
